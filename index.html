@@ -8,7 +8,7 @@
 <body>
     <script>
         function formatDate(date) {
-            return date.getTime() / 1000; // получение текущего времени в формате UNIX
+            return Math.floor(date.getTime() / 1000);
         }
 
         let currentDate = new Date();
