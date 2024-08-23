@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дата и время</title>
+</head>
+<body>
+    <script>
+        function formatDate(date) {
+            return date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + "-" + date.getHours() + "-" + date.getMinutes() + "-" + date.getSeconds();
+        }
+
+        let currentDate = new Date();
+        document.write(formatDate(currentDate));
+    </script>
+</body>
+</html>
